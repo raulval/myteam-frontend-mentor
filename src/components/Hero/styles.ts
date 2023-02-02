@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   display: flex;
-  padding-top: 80px;
+  padding-top: 160px;
 
   @media (min-width: 768px) {
-    padding-top: 9rem;
+    padding-top: 224px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 10.625rem;
+    padding-top: 250px;
   }
 `;
 

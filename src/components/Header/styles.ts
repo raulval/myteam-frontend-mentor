@@ -8,13 +8,14 @@ interface MenuLinkProps {
 
 export const Container = styled.header`
   display: flex;
-  position: sticky;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-
   width: 100vw;
   height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  justify-content: center;
+
+  background-color: ${(props) => props.theme.colors.background};
 `;
 
 export const Wrapper = styled.nav`
