@@ -23,14 +23,14 @@ const Header = () => {
             <MenuLinkHome
               href={"/"}
               onClick={() => setIsActive("home")}
-              isActive={isActive}
+              isactive={isActive}
             >
               home
             </MenuLinkHome>
             <MenuLinkAbout
               href={"#"}
               onClick={() => setIsActive("about")}
-              isActive={isActive}
+              isactive={isActive}
             >
               about
             </MenuLinkAbout>

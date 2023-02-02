@@ -3,12 +3,13 @@ import Link from "next/link";
 import styled from "styled-components";
 
 interface MenuLinkProps {
-  isActive?: string;
+  isactive?: string;
 }
 
 export const Container = styled.header`
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   align-items: center;
   justify-content: center;
 
@@ -41,14 +42,14 @@ export const MenuLinkHome = styled(Link)<MenuLinkProps>`
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) =>
-    props.isActive === "home"
+    props.isactive === "home"
       ? props.theme.colors.primary.main
       : props.theme.colors.primary.text};
 
   text-decoration: ${(props) =>
-    props.isActive === "home" ? "2px underline" : "none"};
+    props.isactive === "home" ? "2px underline" : "none"};
   text-underline-offset: ${(props) =>
-    props.isActive === "home" ? "0.25rem" : "none"};
+    props.isactive === "home" ? "0.25rem" : "none"};
 
   transition: all 0.2s ease-in-out;
 
@@ -61,14 +62,14 @@ export const MenuLinkAbout = styled(Link)<MenuLinkProps>`
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) =>
-    props.isActive === "about"
+    props.isactive === "about"
       ? props.theme.colors.primary.main
       : props.theme.colors.primary.text};
 
   text-decoration: ${(props) =>
-    props.isActive === "about" ? "2px underline" : "none"};
+    props.isactive === "about" ? "2px underline" : "none"};
   text-underline-offset: ${(props) =>
-    props.isActive === "about" ? "0.25rem" : "none"};
+    props.isactive === "about" ? "0.25rem" : "none"};
 
   transition: all 0.2s ease-in-out;
 
