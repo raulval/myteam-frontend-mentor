@@ -19,11 +19,6 @@ const Theme = {
       text: "#99a8a9",
     },
   },
-  themes: {
-    color1: "#f87070",
-    color2: "#58c1c4",
-    color3: "#d881f8",
-  },
   fonts: {
     main: livvic.style.fontFamily,
   },
