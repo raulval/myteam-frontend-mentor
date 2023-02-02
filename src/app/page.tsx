@@ -1,4 +1,5 @@
 "use client";
+import Build from "@/components/BuildManage";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { GlobalStyle } from "@/styles/globals";
@@ -13,6 +14,7 @@ export default function Home() {
       <Container>
         <Header />
         <Hero />
+        <Build />
       </Container>
     </ThemeProvider>
   );
