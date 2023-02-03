@@ -2,6 +2,7 @@
 import Build from "@/components/BuildManage";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Stories from "@/components/Stories";
 import { GlobalStyle } from "@/styles/globals";
 import { Container } from "@/styles/page.styles";
 import Theme from "@/styles/theme";
@@ -15,6 +16,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Build />
+        <Stories />
       </Container>
     </ThemeProvider>
   );
