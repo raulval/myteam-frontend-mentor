@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 interface HeaderProps {
-  isactive?: string;
+  active?: boolean;
   extendNavbar?: boolean;
 }
 
@@ -52,14 +52,12 @@ export const MenuLinkHome = styled(Link)<HeaderProps>`
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) =>
-    props.isactive === "home"
+    props.active
       ? props.theme.colors.primary.main
       : props.theme.colors.primary.text};
 
-  text-decoration: ${(props) =>
-    props.isactive === "home" ? "2px underline" : "none"};
-  text-underline-offset: ${(props) =>
-    props.isactive === "home" ? "0.25rem" : "none"};
+  text-decoration: ${(props) => (props.active ? "2px underline" : "none")};
+  text-underline-offset: ${(props) => (props.active ? "0.25rem" : "none")};
 
   transition: all 0.2s ease-in-out;
 
@@ -72,14 +70,12 @@ export const MenuLinkAbout = styled(Link)<HeaderProps>`
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) =>
-    props.isactive === "about"
+    props.active
       ? props.theme.colors.primary.main
       : props.theme.colors.primary.text};
 
-  text-decoration: ${(props) =>
-    props.isactive === "about" ? "2px underline" : "none"};
-  text-underline-offset: ${(props) =>
-    props.isactive === "about" ? "0.25rem" : "none"};
+  text-decoration: ${(props) => (props.active ? "2px underline" : "none")};
+  text-underline-offset: ${(props) => (props.active ? "0.25rem" : "none")};
 
   transition: all 0.2s ease-in-out;
 

@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.svg";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   ContactButton,
@@ -15,7 +16,7 @@ import {
 } from "./styles";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState("home");
+  const pathname = usePathname();
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
@@ -24,17 +25,12 @@ const Header = () => {
         <Logo src={logo} alt="MyTeam logo" />
         <Menu>
           <MenuLinkWrapper>
-            <MenuLinkHome
-              href={"/"}
-              onClick={() => setIsActive("home")}
-              isactive={isActive}
-            >
+            <MenuLinkHome href={"/"} active={pathname === "/" ? true : false}>
               home
             </MenuLinkHome>
             <MenuLinkAbout
-              href={"#"}
-              onClick={() => setIsActive("about")}
-              isactive={isActive}
+              href={"/about"}
+              active={pathname === "/about" ? true : false}
             >
               about
             </MenuLinkAbout>
@@ -54,17 +50,12 @@ const Header = () => {
           <div />
         </Hamburger>
         <MobileMenu extendNavbar={extendNavbar}>
-          <MenuLinkHome
-            href={"/"}
-            onClick={() => setIsActive("home")}
-            isactive={isActive}
-          >
+          <MenuLinkHome href={"/"} active={pathname === "/" ? true : false}>
             home
           </MenuLinkHome>
           <MenuLinkAbout
-            href={"#"}
-            onClick={() => setIsActive("about")}
-            isactive={isActive}
+            href={"/about"}
+            active={pathname === "/about" ? true : false}
           >
             about
           </MenuLinkAbout>
