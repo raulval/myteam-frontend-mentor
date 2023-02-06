@@ -1,3 +1,8 @@
+"use client";
+import { GlobalStyle } from "@/styles/globals";
+import Theme from "@/styles/theme";
+import { ThemeProvider } from "styled-components";
+
 export default function RootLayout({
   children,
 }: {
@@ -10,7 +15,12 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <ThemeProvider theme={Theme}>
+          <GlobalStyle />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
