@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   padding-top: 8.75rem;
   padding-bottom: 10.25rem;
+  background-color: ${(props) => props.theme.colors.terciary.main};
 
   @media (min-width: 768px) {
     padding-top: 6.25rem;
