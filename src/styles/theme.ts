@@ -16,7 +16,11 @@ const Theme = {
       text: "#79c8c7",
     },
     terciary: {
+      main: "#004047",
       text: "#99a8a9",
+    },
+    footer: {
+      background: "#002529",
     },
   },
   fonts: {
