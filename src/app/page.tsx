@@ -1,10 +1,7 @@
 "use client";
-import Build from "@/components/BuildManage";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Ready from "@/components/Ready";
-import Stories from "@/components/Stories";
+
+import { Build, Footer, Header, Hero, Ready, Stories } from "@/components";
+
 import { Container } from "@/styles/page.styles";
 
 export default function Home() {
