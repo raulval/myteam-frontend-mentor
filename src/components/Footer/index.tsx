@@ -40,7 +40,10 @@ const Footer = () => {
           <p>Call Us : 949-833-7432</p>
         </Address>
         <Socials>
-          <SocialLink href={"https://www.linkedin.com/in/raulval/"}>
+          <SocialLink
+            href={"https://www.linkedin.com/in/raulval/"}
+            target="_blank"
+          >
             <SocialIcon
               src={linkedin}
               alt="Linkedin icon"
@@ -48,7 +51,7 @@ const Footer = () => {
               height={32}
             />
           </SocialLink>
-          <SocialLink href={"https://github.com/raulval"}>
+          <SocialLink href={"https://github.com/raulval"} target="_blank">
             <SocialIcon src={github} alt="Github icon" width={40} height={40} />
           </SocialLink>
         </Socials>
