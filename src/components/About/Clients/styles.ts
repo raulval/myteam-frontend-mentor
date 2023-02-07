@@ -2,8 +2,8 @@ import Image from "next/image";
 import styled from "styled-components";
 
 interface ClientImageProps {
-  mdWidth: string;
-  lgWidth: string;
+  mdwidth: string;
+  lgwidth: string;
 }
 
 export const Container = styled.section`
@@ -91,10 +91,10 @@ export const ClientImage = styled(Image)<ClientImageProps>`
   height: auto;
 
   @media (min-width: 768px) {
-    width: ${(props) => props.mdWidth};
+    width: ${(props) => props.mdwidth};
   }
 
   @media (min-width: 1440px) {
-    width: ${(props) => props.lgWidth};
+    width: ${(props) => props.lgwidth};
   }
 `;

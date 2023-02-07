@@ -20,40 +20,40 @@ const Clients = () => {
             alt="the verge logo"
             width={146.56}
             height={0}
-            mdWidth="103px"
-            lgWidth="165px"
+            mdwidth="103px"
+            lgwidth="165px"
           />
           <ClientImage
             src="/images/logo-jakarta-post.png"
             alt="the verge logo"
             width={162.21}
             height={0}
-            mdWidth="114px"
-            lgWidth="184px"
+            mdwidth="114px"
+            lgwidth="184px"
           />
           <ClientImage
             src="/images/logo-the-guardian.png"
             alt="the verge logo"
             width={159.37}
             height={0}
-            mdWidth="112px"
-            lgWidth="180px"
+            mdwidth="112px"
+            lgwidth="180px"
           />
           <ClientImage
             src="/images/logo-tech-radar.png"
             alt="the verge logo"
             width={146.56}
             height={0}
-            mdWidth="103px"
-            lgWidth="165px"
+            mdwidth="103px"
+            lgwidth="165px"
           />
           <ClientImage
             src="/images/logo-gadgets-now.png"
             alt="the verge logo"
             width={86.8}
             height={0}
-            mdWidth="61px"
-            lgWidth="98px"
+            mdwidth="61px"
+            lgwidth="98px"
           />
         </ClientsWrapper>
       </Content>
