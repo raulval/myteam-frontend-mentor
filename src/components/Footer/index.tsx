@@ -23,12 +23,12 @@ const Footer = () => {
       <Content>
         <Logo src={logo} alt="Logo image" />
         <FooterNav>
-          <FooterNavLink href={"/"} active={pathname === "/" ? true : false}>
+          <FooterNavLink href={"/"} $active={pathname === "/" ? true : false}>
             home
           </FooterNavLink>
           <FooterNavLink
             href={"/about"}
-            active={pathname === "/about" ? true : false}
+            $active={pathname === "/about" ? true : false}
           >
             about
           </FooterNavLink>

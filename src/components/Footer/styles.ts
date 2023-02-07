@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 interface FooterProps {
-  active?: boolean;
+  $active?: boolean;
 }
 
 export const Container = styled.footer`
@@ -80,12 +80,12 @@ export const FooterNavLink = styled(Link)<FooterProps>`
   font-size: 1rem;
   font-weight: 600;
   color: ${(props) =>
-    props.active
+    props.$active
       ? props.theme.colors.primary.main
       : props.theme.colors.primary.text};
 
-  text-decoration: ${(props) => (props.active ? "2px underline" : "none")};
-  text-underline-offset: ${(props) => (props.active ? "0.25rem" : "none")};
+  text-decoration: ${(props) => (props.$active ? "2px underline" : "none")};
+  text-underline-offset: ${(props) => (props.$active ? "0.25rem" : "none")};
 
   transition: all 0.2s ease-in-out;
 

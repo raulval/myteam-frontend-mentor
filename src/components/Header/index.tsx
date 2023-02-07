@@ -25,12 +25,12 @@ const Header = () => {
         <Logo src={logo} alt="MyTeam logo" />
         <Menu>
           <MenuLinkWrapper>
-            <MenuLinkHome href={"/"} active={pathname === "/" ? true : false}>
+            <MenuLinkHome href={"/"} $active={pathname === "/" ? true : false}>
               home
             </MenuLinkHome>
             <MenuLinkAbout
               href={"/about"}
-              active={pathname === "/about" ? true : false}
+              $active={pathname === "/about" ? true : false}
             >
               about
             </MenuLinkAbout>
@@ -50,12 +50,12 @@ const Header = () => {
           <div />
         </Hamburger>
         <MobileMenu extendNavbar={extendNavbar}>
-          <MenuLinkHome href={"/"} active={pathname === "/" ? true : false}>
+          <MenuLinkHome href={"/"} $active={pathname === "/" ? true : false}>
             home
           </MenuLinkHome>
           <MenuLinkAbout
             href={"/about"}
-            active={pathname === "/about" ? true : false}
+            $active={pathname === "/about" ? true : false}
           >
             about
           </MenuLinkAbout>
