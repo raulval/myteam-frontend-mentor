@@ -2,6 +2,7 @@
 
 import {
   Clients,
+  Directors,
   Footer,
   Header,
   HeroAbout as Hero,
@@ -13,6 +14,7 @@ const About = () => {
     <div>
       <Header />
       <Hero />
+      <Directors />
       <Clients />
       <Ready />
       <Footer />
