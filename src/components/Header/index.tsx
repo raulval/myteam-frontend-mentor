@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.svg";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+
 import { useState } from "react";
 import {
   ContactButton,
@@ -17,6 +18,7 @@ import {
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
@@ -36,7 +38,9 @@ const Header = () => {
             </MenuLinkAbout>
           </MenuLinkWrapper>
           <ContactButtonWrapper>
-            <ContactButton>contact us</ContactButton>
+            <ContactButton onClick={() => router.push("/contact-us")}>
+              contact us
+            </ContactButton>
           </ContactButtonWrapper>
         </Menu>
         <Hamburger
@@ -59,7 +63,9 @@ const Header = () => {
           >
             about
           </MenuLinkAbout>
-          <ContactButton>contact us</ContactButton>
+          <ContactButton onClick={() => router.push("/contact-us")}>
+            contact us
+          </ContactButton>
         </MobileMenu>
       </Wrapper>
     </Container>
