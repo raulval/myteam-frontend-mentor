@@ -1,7 +1,7 @@
 "use client";
 import patternTop from "@/assets/bg-patterns/bg-pattern-about-2-contact-1.svg";
 import patternBottom from "@/assets/bg-patterns/bg-pattern-contact-2.svg";
-import { Footer, Header, HeroContact } from "@/components";
+import { Footer, Form, Header, HeroContact } from "@/components";
 import {
   Container,
   Content,
@@ -16,6 +16,7 @@ const Contact = () => {
       <Container>
         <Content>
           <HeroContact />
+          <Form />
           <Pattern1 src={patternTop} alt="pattern" />
           <Pattern2 src={patternBottom} alt="pattern" />
         </Content>
