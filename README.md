@@ -1,4 +1,4 @@
-# Pomodoro App
+# MyTeam Landing Page
 
 This project was created for learning Next.js 13 using a challange of [frontendmentor.io](https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW).
 
