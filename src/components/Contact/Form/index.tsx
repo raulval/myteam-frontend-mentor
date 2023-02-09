@@ -1,5 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { FormInput, FormTextArea } from "./FormFields";
 import { validation } from "./formValidation";
 import { FormContainer, SubmitButton } from "./styles";
@@ -24,6 +25,7 @@ const Form = () => {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
+    toast.success("Thanks for contacting us!");
     reset();
   };
 

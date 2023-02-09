@@ -8,10 +8,18 @@ import {
   Pattern1,
   Pattern2,
 } from "@/styles/contact.styles";
+import { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   return (
     <>
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 3000,
+        }}
+      />
       <Header />
       <Container>
         <Content>
